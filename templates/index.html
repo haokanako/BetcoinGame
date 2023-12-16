@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Game - 预期值</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold-italic {
+            font-style: italic;
+            font-weight: bold;
+        }
+        .footnote {
+            font-size: 12px;
+            font-style: italic;
+            color: #6c757d; /* Using Bootstrap gray color */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coin Game - 如果一个投硬币的游戏</h1>
+        <p>正面亏 <span class="italic">50%</span>，反面赚 <span class="italic">100%</span>，条件是你每次都要All in，你会参与吗？</p>
+
+        <h2>预期值公式：</h2>
+        <p class="bold-italic">预期值 = (正面概率 * 正面收益) + (反面概率 * 反面收益)</p>
+        <p>其中，正面概率和反面概率都是 <span class="italic">50%</span>，正面收益是 <span class="italic">-50%</span>（亏损 <span class="italic">50%</span>），反面收益是 <span class="italic">100%</span></p>
+        <p>预期值 = (0.5 * <span class="italic">-50%</span>) + (0.5 * <span class="italic">100%</span>)</p>
+        <p>预期值 = <span class="italic">0%</span></p>
+
+        <div class="form-container">
+            <h2>游戏模拟：</h2>
+            <form action="/play" method="post">
+                <label for="initial_balance">初始余额:</label>
+                <input type="number" name="initial_balance" required step="any" class="form-control">
+                <label for="num_rounds">游戏轮数:</label>
+                <input type="number" name="num_rounds" required class="form-control">
+                <button type="submit" class="btn btn-primary mt-3">开始游戏</button>
+            </form>
+        </div>
+        <p class="footnote">谨此纪念我曾在赌博上损失的钱</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
