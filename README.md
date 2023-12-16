@@ -12,5 +12,8 @@ $$
 3. FLASK
 4. 骗我钱的赌博公司
 
+### 4. 运行截图
+<img width="1115" alt="image" src="https://github.com/haokanako/BetcoinGame/assets/74845190/e90101a5-5737-4d57-bcdb-ea14ce8c3820">
 
+<img width="1115" alt="image" src="https://github.com/haokanako/BetcoinGame/assets/74845190/5b1ee6b6-d338-4d1d-999f-04cf8e4be628">
 
